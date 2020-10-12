@@ -1,2 +1,0 @@
-# unserious_game
-test
