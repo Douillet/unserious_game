@@ -1,0 +1,167 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+/** import de polices **/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+  background: url(https://media.giphy.com/media/14zSZXA5q24PC/source.gif);
+  color: rgb(250, 253, 247);
+  font-family: 'Press Start 2P', cursive;
+
+  /** permet de centrer les éléments dans la page **/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/** l'image fait toujours la même hauteur **/
+img{
+  margin: 40px;
+  border: 1px solid yellow;
+  padding: 10px;
+  height: 40vh; /** vh = % pour la fenêtre **/
+  width: auto;
+}
+/** les titres ne sont pas trop grands **/
+h1,h2{
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+}
+
+
+/** boutons **/
+.btn {
+	box-shadow: 6px 6px 0px 0px #6d4e0b;
+	background:#333;
+	border:1px solid #EEDD0b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Press Start 2P', cursive;
+	font-size:17px;
+	padding:7px 25px; /** écartement entre les bords du bouton**/
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+/**quand la souris passe dessus**/
+.btn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+/** Quand on clique dessus**/
+.btn:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	box-shadow: 0px 1px 0px 0px #050505;
+	background:linear-gradient(to bottom, #fff6db 5%, #dbcda8 100%);
+	background-color:#fff6db;
+	border-radius:15px;
+	border:2px solid #fff1d1;
+	display:inline-block;
+	cursor:pointer;
+	color:#494d3e;
+	font-family:'Press Start 2P', cursive;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #dbcda8 5%, #fff6db 100%);
+	background-color:#dbcda8;
+}
+.myButton:active {
+	position:relative;
+  top:1px;
+}
+.myButtonblue {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButtonblue:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButtonblue:active {
+	position:relative;
+	top:1px;
+}
+
+/** liste de boutons **/
+.btns-list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  justify-content: center;
+}
+.btn{
+  margin: 15px;
+}
+.myButton{
+  margin: 15px;
+}
+.myButtonblue{
+  margin: 15px;
+}
+
+/** faire bouger un peu tout ça **/
+h1,
+h2 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+/** faire clignotter le sous titre **/ 
+h2 {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/** une animation de très bon goût **/
+.yeah{
+  animation: yeah 2s ease-out;
+}
+@keyframes yeah{
+  0%{
+    transform:rotate(-600deg) scale(0) rotateY(180deg)
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
