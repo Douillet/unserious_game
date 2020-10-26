@@ -5,9 +5,16 @@
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <title>My New Pen!</title>
-  
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/style.css">
+  <!-- Lien qui renvoie aux conditions d'affichage d'un téléphone (fichier phone.css) si l'écran est moins large ue 20px -->
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/phone.css" />
+  <!-- Déclaration du lien vers la banque d'animation -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 <body>
   <style>
@@ -16,8 +23,13 @@
   }
   </style> 
   <div class="a">
-<h1> WIN </h1>
+<h1 class="animate__bounceIn"> WIN </h1>
 <a class="myButton" href="https://sparts301.github.io/unseriousgame/" target="_self"> Question suivante </a> <br>
 <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif">
+  </div>
+
+<div class="signature">
+  <a href="https://github.com/Douillet"> Antoine DOUILLET</a> 
+  </div>
 </body>
 </html>

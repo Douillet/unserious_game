@@ -23,6 +23,27 @@ body {
   text-shadow:2px 4px 2px #000000;
 }
 
+.signature{
+	background-color: #222222;
+	position: fixed;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 0px;
+	box-shadow: 5px 5px 15px 5px #000000;
+	right: 20px;
+	width: 150px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.signature a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f0f0f0;
+	text-decoration: none;
+	font-size: 10px;
+}
+
 /** l'image fait toujours la même hauteur **/
 img{
   margin: 40px;
@@ -94,6 +115,7 @@ h2{
 	position:relative;
   top:1px;
 }
+/** bouton bleu **/
 .myButtonblue {
 	box-shadow:inset 0px -3px 7px 0px #29bbff;
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
@@ -117,7 +139,7 @@ h2{
 	position:relative;
 	top:1px;
 }
-
+/** bouton rouge **/
 .MyButtonRed {
 	box-shadow:inset 0px -3px 7px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
@@ -141,6 +163,7 @@ h2{
 	position:relative;
 	top:1px;
 }
+/** bouton jaune **/
 .MyButtonYellow {
 	box-shadow:inset 0px -3px 7px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
@@ -164,6 +187,7 @@ h2{
 	position:relative;
 	top:1px;
 }
+/** bouton vert **/
 .MyButtonGreen {
 	box-shadow:inset 0px -3px 7px 0px #caefab;
 	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
@@ -213,6 +237,9 @@ h2{
 .MyButtonGreen{
   margin: 15px
 }
+
+/** Tout ce qui suit n'est pas visible ou utile car masqué par d'autres animations spécifiques ou tout simplement inutilisé **/
+
 /** faire bouger un peu tout ça **/
 h1,
 h2 {
